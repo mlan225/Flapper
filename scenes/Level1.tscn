@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://f6h3udceg8ps"]
+
+[ext_resource type="Script" path="res://scenes/Level1.gd" id="1_8sjfe"]
+[ext_resource type="PackedScene" uid="uid://d00okyc3jec6f" path="res://scenes/Table.tscn" id="1_uhbeo"]
+[ext_resource type="PackedScene" uid="uid://b8ommtlhj8ypr" path="res://scenes/Player.tscn" id="2_x6s51"]
+[ext_resource type="PackedScene" uid="uid://bjmemavfcco1d" path="res://scenes/CustomerPool.tscn" id="4_q2cac"]
+
+[node name="Level1" type="Node2D" node_paths=PackedStringArray("customerPool")]
+script = ExtResource("1_8sjfe")
+customerPool = NodePath("CustomerPool")
+
+[node name="Tables" type="Node2D" parent="."]
+position = Vector2(-249, 0)
+
+[node name="Table0" parent="Tables" instance=ExtResource("1_uhbeo")]
+position = Vector2(203, 116)
+
+[node name="Table1" parent="Tables" instance=ExtResource("1_uhbeo")]
+position = Vector2(203, 375)
+
+[node name="Table2" parent="Tables" instance=ExtResource("1_uhbeo")]
+position = Vector2(203, 614)
+
+[node name="Table3" parent="Tables" instance=ExtResource("1_uhbeo")]
+position = Vector2(203, 871)
+
+[node name="Player" parent="." instance=ExtResource("2_x6s51")]
+position = Vector2(1792, 451)
+
+[node name="CustomerPool" parent="." instance=ExtResource("4_q2cac")]
+position = Vector2(948, 1192)

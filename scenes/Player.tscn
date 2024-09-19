@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8ommtlhj8ypr"]
+
+[ext_resource type="Script" path="res://scenes/Player.gd" id="1_ymu3n"]
+[ext_resource type="PackedScene" uid="uid://dpy7rjkngot5s" path="res://scenes/Egg.tscn" id="2_40ct3"]
+
+[node name="Player" type="Node2D"]
+position = Vector2(-27, -52)
+script = ExtResource("1_ymu3n")
+Egg = ExtResource("2_40ct3")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0, 0.572549, 0.909804, 1)
+polygon = PackedVector2Array(-1, -2, 59, -2, 59, 122, -2, 121)

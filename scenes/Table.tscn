@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://d00okyc3jec6f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xcu3g"]
+size = Vector2(41, 131)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nn70c"]
+size = Vector2(52, 110)
+
+[node name="Table" type="Node2D"]
+
+[node name="TableTop" type="Polygon2D" parent="."]
+position = Vector2(1, 0)
+scale = Vector2(4.32183, 0.578101)
+color = Color(0.564706, 0.329412, 0.184314, 1)
+polygon = PackedVector2Array(0, 0, 324.4, -1.7298, 336.2, 62.2729, 0, 64.0027)
+
+[node name="TableBottom" type="Polygon2D" parent="."]
+z_index = -1
+position = Vector2(-1, 26)
+scale = Vector2(6.87556, 0.902401)
+color = Color(0.313726, 0.172549, 0.0823529, 1)
+polygon = PackedVector2Array(0, 0, 204.347, 1.02597, 204.33, 35.0612, 204.312, 70.9219, -2.98023e-08, 70.9219)
+
+[node name="TableSpawn" type="Node2D" parent="."]
+position = Vector2(-41, -44)
+
+[node name="TableRightBound" type="Area2D" parent="."]
+position = Vector2(1440, -21)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TableRightBound"]
+shape = SubResource("RectangleShape2D_xcu3g")
+
+[node name="TableLeftBound" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TableLeftBound"]
+position = Vector2(-9, 41)
+shape = SubResource("RectangleShape2D_nn70c")
+
+[node name="PlayerSpot" type="Node2D" parent="."]
+position = Vector2(1427, -48)
+
+[node name="EggSpawn" type="Node2D" parent="."]
+position = Vector2(1411, 11)

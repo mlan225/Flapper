@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpy7rjkngot5s"]
+
+[ext_resource type="Script" path="res://scenes/Egg.gd" id="1_n4hds"]
+[ext_resource type="Texture2D" uid="uid://ckcunee3cbrmq" path="res://assets/kenney_puzzle-pack/png/element_green_diamond.png" id="1_r6diq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rcwa0"]
+
+[node name="Egg" type="CharacterBody2D"]
+script = ExtResource("1_n4hds")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.479999, 0.479999)
+texture = ExtResource("1_r6diq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_rcwa0")
