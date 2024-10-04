@@ -40,6 +40,7 @@ func SetLayerMask(layerBit: int) -> void:
 #instead of a specific distance
 
 #DEV NOTE: I need to take another look at timer logic to understand how long to the catch and wait is
+#I may be able to remove movementTimer node and use process function instead
 func PushCustomerBack(pushBackSpeed: int):
 	canCatch = false
 	velocity = Vector2(-1,0) * pushBackSpeed

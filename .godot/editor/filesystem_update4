@@ -5,3 +5,8 @@ res://scenes/Egg.tscn
 res://scenes/Customer.tscn
 res://scenes/Table.tscn
 res://scenes/Customer.gd
+res://scenes/GreenCustomer.tscn
+res://scenes/CustomerPool.gd
+res://scenes/RedCustomer.tscn
+res://scenes/CustomerSpawner.tscn
+res://scenes/CustomerSpawner.gd

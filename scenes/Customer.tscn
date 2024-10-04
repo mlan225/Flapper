@@ -12,9 +12,11 @@ size = Vector2(34.4937, 75.6329)
 [node name="Customer" type="CharacterBody2D"]
 position = Vector2(4, 0)
 scale = Vector2(3.16, 3.16)
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_x8eve")
 
-[node name="ElementGreenPolygon" type="Sprite2D" parent="."]
+[node name="CustomerSprite" type="Sprite2D" parent="."]
 position = Vector2(-2, 2)
 texture = ExtResource("1_jkoij")
 

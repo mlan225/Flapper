@@ -3,9 +3,10 @@
 [ext_resource type="Script" path="res://scenes/Level1.gd" id="1_8sjfe"]
 [ext_resource type="PackedScene" uid="uid://d00okyc3jec6f" path="res://scenes/Table.tscn" id="1_uhbeo"]
 [ext_resource type="PackedScene" uid="uid://b8ommtlhj8ypr" path="res://scenes/Player.tscn" id="2_x6s51"]
-[ext_resource type="PackedScene" uid="uid://bjmemavfcco1d" path="res://scenes/CustomerPool.tscn" id="4_q2cac"]
+[ext_resource type="PackedScene" uid="uid://bjmemavfcco1d" path="res://scenes/CustomerSpawner.tscn" id="4_q2cac"]
 
 [node name="Level1" type="Node2D" node_paths=PackedStringArray("customerPool")]
+position = Vector2(-1, 0)
 script = ExtResource("1_8sjfe")
 customerPool = NodePath("CustomerPool")
 
