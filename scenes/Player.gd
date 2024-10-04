@@ -52,7 +52,9 @@ func GetTableSpotPosition(index: int):
 	
 	return playerTableNodes[currentTableIndex].get_node("PlayerSpot").global_position
 	
+#Egg A	
 func ThrowAEgg() -> void:
 	var egg = Egg.instantiate()
 	owner.add_child(egg)
 	egg.position = currentTableEggSpawn
+	egg.SetCollisionMask(2)

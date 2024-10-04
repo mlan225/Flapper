@@ -1,10 +1,7 @@
 res://scenes/CustomerPool.tscn
-res://scenes/CustomerPool.gd
 res://scenes/Level1.tscn
 res://scenes/Player.tscn
-res://scenes/Player.gd
 res://scenes/Egg.tscn
 res://scenes/Customer.tscn
-res://scenes/eggBase.gd
-res://scenes/Egg.gd
 res://scenes/Table.tscn
+res://scenes/Customer.gd

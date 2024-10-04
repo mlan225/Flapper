@@ -26,11 +26,15 @@ position = Vector2(-41, -44)
 
 [node name="TableRightBound" type="Area2D" parent="."]
 position = Vector2(1440, -21)
+collision_layer = 0
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TableRightBound"]
 shape = SubResource("RectangleShape2D_xcu3g")
 
 [node name="TableLeftBound" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TableLeftBound"]
 position = Vector2(-9, 41)

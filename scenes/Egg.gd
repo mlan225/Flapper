@@ -9,3 +9,7 @@ func _process(delta: float) -> void:
 func Movement() -> void:
 	velocity = Vector2(-1,0) * speed
 	move_and_slide()
+
+#set the collision mask in the Area2D node
+func SetCollisionMask(maskBit: int) -> void:
+	$Area2D.set_collision_mask_value(maskBit, true)

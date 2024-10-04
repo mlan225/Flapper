@@ -7,7 +7,3 @@
 script = ExtResource("1_7vy6y")
 
 [node name="Customer0" parent="." instance=ExtResource("1_2cb5w")]
-
-[node name="Customer1" parent="." instance=ExtResource("1_2cb5w")]
-
-[node name="Customer2" parent="." instance=ExtResource("1_2cb5w")]

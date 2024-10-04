@@ -23,6 +23,7 @@ position = Vector2(-2.05696, 2.68987)
 shape = SubResource("RectangleShape2D_6ji15")
 
 [node name="EggGrabArea" type="Area2D" parent="."]
+collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EggGrabArea"]
 position = Vector2(-2.05696, 39.3987)
@@ -30,4 +31,5 @@ shape = SubResource("RectangleShape2D_jyulm")
 
 [node name="MovementTimer" type="Timer" parent="."]
 
+[connection signal="area_entered" from="EggGrabArea" to="." method="_on_egg_grab_area_area_entered"]
 [connection signal="timeout" from="MovementTimer" to="." method="_on_movement_timer_timeout"]

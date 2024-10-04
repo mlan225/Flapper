@@ -12,7 +12,7 @@ var customers = []
 func _ready() -> void:
 	GetSpawnPoints()
 	GetCustomers()
-#	StartPool()
+	StartPool()
 
 func _process(delta: float) -> void:
 #	if the is off cooldown and can spawn customers
@@ -69,4 +69,5 @@ func SpawnCustomer() -> void:
 	var customerNode = get_tree().get_root().get_node("Level1").get_node("CustomerPool").get_node(str(customerNodeName))
 	
 	customerNode.global_position = spawnPosition
+	customerNode.SetLayerMask(2)
 	customerNode.StartMovement()
